@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from os import listdir
 from os.path import isfile, join
 
@@ -64,6 +66,13 @@ grey = {
     "#228be6": "#767fad"
 }
 
+aqua = {
+    "#005ae1": "#00bce1",
+    "#228be6": "#a4d7e1",
+    "#005ae1": "#00bce1",
+    "#228be6": "#a4d7e1"
+}
+
 color_mapping = {
     "green": green,
     "purple": purple,
@@ -71,7 +80,8 @@ color_mapping = {
     "yellow": yellow,
     "orange": orange,
     "pink": pink,
-    "grey": grey
+    "grey": grey,
+    "aqua": aqua
 }
 
 def change_color(blue_folder: str, color: str) -> str:
