@@ -22,11 +22,11 @@
        gradientTransform="matrix(1 0 0 1.1 16.669 62.435)"
        gradientUnits="userSpaceOnUse">
       <stop
-         stop-color="#fff600"
+         stop-color="#e1cc00"
          offset="0"
          id="stop2" />
       <stop
-         stop-color="#ffe343"
+         stop-color="#ffff3c"
          offset="1"
          id="stop4" />
     </linearGradient>
@@ -39,11 +39,11 @@
        gradientTransform="matrix(1 0 0 1.1 16.669 62.435)"
        gradientUnits="userSpaceOnUse">
       <stop
-         stop-color="#fff600"
+         stop-color="#e1cc00"
          offset="0"
          id="stop7" />
       <stop
-         stop-color="#ffe343"
+         stop-color="#ffff3c"
          offset="1"
          id="stop9" />
     </linearGradient>
@@ -56,11 +56,11 @@
        gradientTransform="matrix(1,0,0,1.1,16.669,62.435)"
        gradientUnits="userSpaceOnUse">
       <stop
-         stop-color="#fff600"
+         stop-color="#e1cc00"
          offset="0"
          id="stop12" />
       <stop
-         stop-color="#ffe343"
+         stop-color="#ffff3c"
          offset="1"
          id="stop14" />
     </linearGradient>

@@ -22,11 +22,11 @@
        gradientTransform="matrix(1 0 0 1.1 16.669 62.435)"
        gradientUnits="userSpaceOnUse">
       <stop
-         stop-color="#64bd97"
+         stop-color="#0da760"
          offset="0"
          id="stop2" />
       <stop
-         stop-color="#22dfe6"
+         stop-color="#97ff95"
          offset="1"
          id="stop4" />
     </linearGradient>
@@ -39,11 +39,11 @@
        gradientTransform="matrix(1 0 0 1.1 16.669 62.435)"
        gradientUnits="userSpaceOnUse">
       <stop
-         stop-color="#64bd97"
+         stop-color="#0da760"
          offset="0"
          id="stop7" />
       <stop
-         stop-color="#22dfe6"
+         stop-color="#97ff95"
          offset="1"
          id="stop9" />
     </linearGradient>
@@ -56,11 +56,11 @@
        gradientTransform="matrix(1,0,0,1.1,16.669,62.435)"
        gradientUnits="userSpaceOnUse">
       <stop
-         stop-color="#64bd97"
+         stop-color="#0da760"
          offset="0"
          id="stop12" />
       <stop
-         stop-color="#22dfe6"
+         stop-color="#97ff95"
          offset="1"
          id="stop14" />
     </linearGradient>
@@ -86,7 +86,7 @@
     </rdf:RDF>
   </metadata>
   <g
-     fill="#477d7f"
+     fill="#5e4aa6"
      stroke-width=".26458"
      id="g30">
     <circle
@@ -112,7 +112,7 @@
   </g>
   <g
      transform="translate(.000295 -.00032978)"
-     fill="#477d7f"
+     fill="#5e4aa6"
      stroke-width=".26458"
      id="g42">
     <circle

@@ -6,71 +6,48 @@ from os.path import isfile, join
 original_dir = "original"
 
 green = {
-    "#005ae1": "#64bd97",
-    "#228be6": "#22dfe6",
-    "#005ae1": "#64bd97",
-    "#228be6": "#22dfe6",
-    "#005ae1": "#64bd97",
-    "#228be6": "#22dfe6",
-    "#5e4aa6": "#477d7f",
-    "#000000": "#1f5357"
+    "#005ae1": "#0da760",
+    "#228be6": "#97ff95"
 }
 
 purple = {
     "#005ae1": "#930077",
-    "#228be6": "#7622e6",
-    "#005ae1": "#930077",
-    "#228be6": "#7622e6",
-    "#005ae1": "#930077",
-    "#228be6": "#7622e6",
-    "#5e4aa6": "#3a0088",
-    "#000000": "#e61c5d"
+    "#228be6": "#7622e6"
 }
 
 red = {
     "#005ae1": "#cb3b3b",
-    "#228be6": "#e62256",
-    "#005ae1": "#cb3b3b",
-    "#228be6": "#e62256",
-    "#005ae1": "#cb3b3b",
-    "#228be6": "#e62256",
-    "#5e4aa6": "#85203b",
-    "#000000": "#e0c45c"
+    "#228be6": "#e62256"
 }
 
 yellow = {
-    "#005ae1": "#fff600",
-    "#228be6": "#ffe343",
-    "#005ae1": "#fff600",
-    "#228be6": "#ffe343"
+    "#005ae1": "#e1cc00",
+    "#228be6": "#ffff3c"
 }
 
 orange = {
     "#005ae1": "#ffc074",
-    "#228be6": "#ffce36",
-    "#005ae1": "#ffc074",
-    "#228be6": "#ffce36"
+    "#005ae1": "#ffc074"
 }
 
 pink = {
-    "#005ae1": "#ff4fbc",
-    "#228be6": "#ffabf3",
     "#005ae1": "#ff4fbc",
     "#228be6": "#ffabf3"
 }
 
 grey = {
     "#005ae1": "#565656",
-    "#228be6": "#767fad",
-    "#005ae1": "#565656",
     "#228be6": "#767fad"
 }
 
 aqua = {
     "#005ae1": "#00bce1",
-    "#228be6": "#a4d7e1",
-    "#005ae1": "#00bce1",
     "#228be6": "#a4d7e1"
+}
+
+sand = {
+    "#005ae1": "#7e8272",
+    "#228be6": "#cac2a2"
 }
 
 color_mapping = {
@@ -81,7 +58,8 @@ color_mapping = {
     "orange": orange,
     "pink": pink,
     "grey": grey,
-    "aqua": aqua
+    "aqua": aqua,
+    "sand": sand
 }
 
 def change_color(blue_folder: str, color: str) -> str:
@@ -109,5 +87,6 @@ def convert(color: str):
         with open("icons/" + color + "-folder-open.svg", "w") as text_file:
             text_file.write(colored_folder_open)
 
-for color in color_mapping:
-    convert(color)
+# for color in color_mapping:
+#     convert(color)
+convert("purple")
