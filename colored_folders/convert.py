@@ -5,6 +5,11 @@ from os.path import isfile, join
 
 original_dir = "original"
 
+blue = {
+    "#005ae1": "#005ae1",
+    "#228be6": "#228be6"
+}
+
 green = {
     "#005ae1": "#0da760",
     "#228be6": "#97ff95"
@@ -27,7 +32,7 @@ yellow = {
 
 orange = {
     "#005ae1": "#ffc074",
-    "#005ae1": "#ffc074"
+    "#228be6": "#ffce36"
 }
 
 pink = {
@@ -50,7 +55,20 @@ sand = {
     "#228be6": "#cac2a2"
 }
 
+black = {
+    "#005ae1": "#000000",
+    "#228be6": "#636363"
+}
+
+black_post = {
+    'opacity="0.30"': 'opacity="0.30"\n    fill="#ffffff"',
+    'fill="currentColor"': '',
+    'fill="none"': '',
+    'stroke="#000000"': 'stroke="#ffffff"'
+}
+
 color_mapping = {
+    "blue": blue,
     "green": green,
     "purple": purple,
     "red": red,
@@ -60,6 +78,21 @@ color_mapping = {
     "grey": grey,
     "aqua": aqua,
     "sand": sand
+    # "black": black
+}
+
+post_mapping = {
+    # "blue": black_post,
+    # "green": black_post,
+    # "purple": black_post,
+    # "red": black_post,
+    # "yellow": black_post,
+    # "orange": black_post,
+    # "pink": black_post,
+    # "grey": black_post,
+    # "aqua": black_post,
+    # "sand": black_post,
+    # "black": black_post
 }
 
 def change_color(blue_folder: str, color: str) -> str:
@@ -69,6 +102,13 @@ def change_color(blue_folder: str, color: str) -> str:
         color_folder = color_folder.replace(key, value)
     return color_folder
 
+def post_map(colored_folder: str, color: str) -> str:
+    if color in post_mapping:
+        mapping = post_mapping[color]
+        for key, value in mapping.items():
+            colored_folder = colored_folder.replace(key, value)
+    return colored_folder
+
 def convert(color: str):
     with open('template.svg', 'r') as file:
         blue_folder = file.read()
@@ -77,9 +117,10 @@ def convert(color: str):
     for icon in original_icons:
         with open(join(original_dir, icon), 'r') as file:
             txt = file.read()
-            green_svg = txt.replace(blue_folder, template)
+            colored_svg = txt.replace(blue_folder, template)
+            colored_svg = post_map(colored_svg, color)
             with open("icons/" + color + "-" + icon, "w") as text_file:
-                text_file.write(green_svg)
+                text_file.write(colored_svg)
 
     with open('folder-open.svg', 'r') as file:
         folder_open = file.read()
@@ -87,6 +128,5 @@ def convert(color: str):
         with open("icons/" + color + "-folder-open.svg", "w") as text_file:
             text_file.write(colored_folder_open)
 
-# for color in color_mapping:
-#     convert(color)
-convert("purple")
+for color in color_mapping:
+    convert(color)

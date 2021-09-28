@@ -86,7 +86,7 @@
     </rdf:RDF>
   </metadata>
   <g
-     fill="#3a0088"
+     fill="#5e4aa6"
      stroke-width=".26458"
      id="g30">
     <circle
@@ -112,7 +112,7 @@
   </g>
   <g
      transform="translate(.000295 -.00032978)"
-     fill="#3a0088"
+     fill="#5e4aa6"
      stroke-width=".26458"
      id="g42">
     <circle
@@ -179,7 +179,7 @@
   <g
      transform="matrix(0.26457812,0,0,0.26457812,2.1586994,4.221569)"
      fill="#000000"
-     opacity="0.15"
+     opacity="0.30"
      id="g1157">
     <path
        d="m 26,18 v 9.625 l 3.684,0.957 4.287,-6.742 H 30.346 L 26,18"
